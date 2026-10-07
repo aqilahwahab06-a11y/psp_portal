@@ -1,0 +1,79 @@
+/* Custom Global Styles */
+html, body {
+    height: 100% !important;
+    min-height: 100vh !important;
+    background: #bdd1f6 !important; /* Paksa hapuskan sebarang gradient */
+    background-color: #bdd1f6 !important; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.table {
+    vertical-align: middle;
+}
+
+/* Custom Login Page Styling */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bdd1f6 !important;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+}
+
+/* Tukar warna header/navbar */
+.custom-navbar {
+    background-color: #f5b9e0 !important;
+}
+
+/* Custom Login Button */
+.btn-login-pink {
+    background-color: #ff69b4;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-login-pink:hover {
+    background-color: #ff1493;
+    color: #ffffff;
+}
+
+/* Custom Pink Card Header */
+.card-header-pink {
+    background-color: #ff69b4 !important;
+    color: #ffffff !important;
+}
+
+/* Custom Pink Button */
+.btn-pink {
+    background-color: #ff69b4 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.btn-pink:hover {
+    background-color: #ff1493 !important;
+    color: #ffffff !important;
+}

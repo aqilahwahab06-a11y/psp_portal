@@ -1,0 +1,1 @@
+<?php echo password_hash('psp12345', PASSWORD_BCRYPT); ?>
