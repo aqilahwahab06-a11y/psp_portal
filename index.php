@@ -1,6 +1,11 @@
 <?php
 // index.php - Main Router / Entry Point
 
+// 1. Wajib jalankan session_start() di paling atas
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once __DIR__ . '/controllers/AuthController.php';
 require_once __DIR__ . '/controllers/ProfileController.php';
 require_once __DIR__ . '/controllers/StudentController.php';
@@ -29,6 +34,12 @@ switch ($action) {
     case 'change_password':
         $profile = new ProfileController();
         $profile->changePassword();
+        break;
+
+    // --- UPLOAD PROFILE PICTURE (DITAMBAH DI SINI) ---
+    case 'upload_profile':
+        $student = new StudentController();
+        $student->uploadProfile();
         break;
 
     // --- STUDENT CRUD MANAGEMENT ---
